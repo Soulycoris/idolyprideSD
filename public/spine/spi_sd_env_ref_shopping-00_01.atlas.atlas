@@ -1,0 +1,174 @@
+
+spi_sd_env_ref_shopping-00_01.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BL/arm_l
+  rotate: true
+  xy: 2, 843
+  size: 150, 163
+  orig: 150, 163
+  offset: 0, 0
+  index: -1
+BL/arm_r
+  rotate: false
+  xy: 167, 843
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+BL/body_ti
+  rotate: false
+  xy: 1681, 1280
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+BL/face
+  rotate: false
+  xy: 1519, 1103
+  size: 288, 175
+  orig: 288, 175
+  offset: 0, 0
+  index: -1
+BL/forearm_l
+  rotate: false
+  xy: 1809, 1115
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+BL/forearm_r
+  rotate: false
+  xy: 737, 868
+  size: 175, 125
+  orig: 175, 125
+  offset: 0, 0
+  index: -1
+BL/hand_choki_l
+  rotate: false
+  xy: 1933, 1581
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_choki_r
+  rotate: false
+  xy: 1933, 1479
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_l
+  rotate: false
+  xy: 1933, 1377
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_r
+  rotate: false
+  xy: 1910, 1013
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_l
+  rotate: false
+  xy: 1910, 911
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_r
+  rotate: false
+  xy: 1306, 893
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_l
+  rotate: false
+  xy: 1408, 893
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_r
+  rotate: false
+  xy: 1510, 886
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/head_b_1
+  rotate: true
+  xy: 1204, 1508
+  size: 525, 475
+  orig: 525, 475
+  offset: 0, 0
+  index: -1
+BL/knee_l
+  rotate: true
+  xy: 547, 868
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+BL/knee_r
+  rotate: true
+  xy: 914, 880
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+BL/leg_l
+  rotate: true
+  xy: 332, 880
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+BL/leg_r
+  rotate: true
+  xy: 1104, 892
+  size: 101, 200
+  orig: 101, 200
+  offset: 0, 0
+  index: -1
+dento
+  rotate: true
+  xy: 2, 995
+  size: 336, 1515
+  orig: 336, 1515
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: false
+  xy: 2, 1333
+  size: 1200, 700
+  orig: 1200, 700
+  offset: 0, 0
+  index: -1
+flag1
+  rotate: true
+  xy: 1519, 988
+  size: 113, 389
+  orig: 113, 389
+  offset: 0, 0
+  index: -1
+flag2
+  rotate: true
+  xy: 1204, 1382
+  size: 124, 375
+  orig: 124, 375
+  offset: 0, 0
+  index: -1
+shopper_simple
+  rotate: false
+  xy: 1681, 1683
+  size: 330, 350
+  orig: 330, 350
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,209 @@
+
+spi_sd_env_promo_event-booth-00_06.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FL/arm_l
+  rotate: false
+  xy: 681, 1145
+  size: 151, 163
+  orig: 151, 163
+  offset: 0, 0
+  index: -1
+FL/arm_r
+  rotate: false
+  xy: 842, 1158
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+FL/body_ti
+  rotate: true
+  xy: 10, 1058
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+FL/eye_c_blink
+  rotate: false
+  xy: 1730, 1732
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eye_c_glad
+  rotate: false
+  xy: 1730, 1609
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eye_o_normal
+  rotate: false
+  xy: 421, 1195
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eyebrow_1_normal
+  rotate: false
+  xy: 1730, 1524
+  size: 226, 75
+  orig: 226, 75
+  offset: 0, 0
+  index: -1
+FL/face
+  rotate: false
+  xy: 1705, 1183
+  size: 313, 300
+  orig: 313, 300
+  offset: 0, 0
+  index: -1
+FL/forearm_l
+  rotate: false
+  xy: 1730, 1855
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+FL/forearm_r
+  rotate: false
+  xy: 817, 1022
+  size: 175, 113
+  orig: 175, 113
+  offset: 0, 0
+  index: -1
+FL/hand_choki_l
+  rotate: false
+  xy: 1915, 1918
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_choki_r
+  rotate: false
+  xy: 1915, 1073
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_gu_l
+  rotate: false
+  xy: 1002, 985
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_gu_r
+  rotate: false
+  xy: 1915, 963
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_idle_l
+  rotate: false
+  xy: 421, 950
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_idle_r
+  rotate: false
+  xy: 1705, 950
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_pa_l
+  rotate: false
+  xy: 10, 948
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_pa_r
+  rotate: false
+  xy: 120, 948
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/head_b_1
+  rotate: true
+  xy: 1220, 1493
+  size: 525, 500
+  orig: 525, 500
+  offset: 0, 0
+  index: -1
+FL/head_f
+  rotate: false
+  xy: 1220, 1045
+  size: 475, 438
+  orig: 475, 438
+  offset: 0, 0
+  index: -1
+FL/knee_l
+  rotate: true
+  xy: 421, 1060
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+FL/knee_r
+  rotate: true
+  xy: 619, 1022
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+FL/leg_l
+  rotate: false
+  xy: 1015, 1095
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+FL/leg_r
+  rotate: true
+  xy: 1705, 1060
+  size: 113, 200
+  orig: 113, 200
+  offset: 0, 0
+  index: -1
+FL/mouth_c_normal
+  rotate: false
+  xy: 1915, 1857
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_c_positive
+  rotate: false
+  xy: 1112, 1034
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_o_normal
+  rotate: false
+  xy: 1815, 999
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_o_positive
+  rotate: false
+  xy: 230, 997
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: false
+  xy: 10, 1318
+  size: 1200, 700
+  orig: 1200, 700
+  offset: 0, 0
+  index: -1

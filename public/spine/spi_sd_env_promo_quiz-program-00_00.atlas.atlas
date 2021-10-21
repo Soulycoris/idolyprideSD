@@ -1,0 +1,34 @@
+
+spi_sd_env_promo_quiz-program-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ailetoyell
+  rotate: false
+  xy: 10, 1024
+  size: 1008, 987
+  orig: 1008, 987
+  offset: 0, 0
+  index: -1
+firststep
+  rotate: true
+  xy: 1028, 1003
+  size: 1008, 983
+  orig: 1008, 983
+  offset: 0, 0
+  index: -1
+monitor
+  rotate: false
+  xy: 1028, 703
+  size: 635, 290
+  orig: 635, 290
+  offset: 0, 0
+  index: -1
+shockoutdance
+  rotate: false
+  xy: 10, 29
+  size: 1008, 985
+  orig: 1008, 985
+  offset: 0, 0
+  index: -1

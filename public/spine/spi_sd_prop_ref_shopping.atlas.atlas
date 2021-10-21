@@ -1,0 +1,69 @@
+
+spi_sd_prop_ref_shopping.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cotton_candy
+  rotate: true
+  xy: 810, 101
+  size: 324, 277
+  orig: 324, 277
+  offset: 0, 0
+  index: -1
+effect/heart
+  rotate: false
+  xy: 10, 730
+  size: 481, 415
+  orig: 481, 415
+  offset: 0, 0
+  index: -1
+shopper_girly
+  rotate: true
+  xy: 451, 97
+  size: 328, 349
+  orig: 328, 349
+  offset: 0, 0
+  index: -1
+shopper_harajuku
+  rotate: false
+  xy: 501, 795
+  size: 330, 350
+  orig: 330, 350
+  offset: 0, 0
+  index: -1
+shopper_high_fashion
+  rotate: false
+  xy: 501, 435
+  size: 330, 350
+  orig: 330, 350
+  offset: 0, 0
+  index: -1
+shopper_simple
+  rotate: false
+  xy: 10, 370
+  size: 330, 350
+  orig: 330, 350
+  offset: 0, 0
+  index: -1
+shopper_street
+  rotate: false
+  xy: 10, 10
+  size: 330, 350
+  orig: 330, 350
+  offset: 0, 0
+  index: -1
+sunglasses
+  rotate: true
+  xy: 350, 257
+  size: 235, 91
+  orig: 235, 91
+  offset: 0, 0
+  index: -1
+tapioca
+  rotate: false
+  xy: 350, 502
+  size: 109, 218
+  orig: 109, 218
+  offset: 0, 0
+  index: -1

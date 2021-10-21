@@ -1,0 +1,20 @@
+
+spi_sd_prop_promo_flyers.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flyer_1
+  rotate: false
+  xy: 2, 219
+  size: 163, 215
+  orig: 163, 215
+  offset: 0, 0
+  index: -1
+flyer_2
+  rotate: false
+  xy: 2, 2
+  size: 163, 215
+  orig: 163, 215
+  offset: 0, 0
+  index: -1

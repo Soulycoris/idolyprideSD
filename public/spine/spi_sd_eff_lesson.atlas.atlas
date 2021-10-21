@@ -1,0 +1,13 @@
+
+spi_sd_eff_lesson.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/drop
+  rotate: false
+  xy: 10, 10
+  size: 107, 177
+  orig: 107, 177
+  offset: 0, 0
+  index: -1

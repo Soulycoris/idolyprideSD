@@ -1,0 +1,237 @@
+
+spi_sd_env_ref_theme-park-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FL/arm_l
+  rotate: false
+  xy: 1113, 533
+  size: 151, 163
+  orig: 151, 163
+  offset: 0, 0
+  index: -1
+FL/arm_r
+  rotate: false
+  xy: 333, 531
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+FL/body_ti
+  rotate: false
+  xy: 1284, 654
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+FL/eye_c_blink
+  rotate: false
+  xy: 333, 691
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eye_c_glad
+  rotate: false
+  xy: 593, 583
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eye_o_normal
+  rotate: false
+  xy: 853, 583
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eyebrow_1_normal
+  rotate: false
+  xy: 1409, 459
+  size: 226, 75
+  orig: 226, 75
+  offset: 0, 0
+  index: -1
+FL/face
+  rotate: false
+  xy: 10, 504
+  size: 313, 300
+  orig: 313, 300
+  offset: 0, 0
+  index: -1
+FL/forearm_l
+  rotate: false
+  xy: 1544, 892
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+FL/forearm_r
+  rotate: false
+  xy: 1665, 436
+  size: 175, 113
+  orig: 175, 113
+  offset: 0, 0
+  index: -1
+FL/hand_choki_l
+  rotate: false
+  xy: 1544, 782
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_choki_r
+  rotate: false
+  xy: 939, 473
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_gu_l
+  rotate: false
+  xy: 1049, 423
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_gu_r
+  rotate: false
+  xy: 1159, 423
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_idle_l
+  rotate: false
+  xy: 333, 421
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_idle_r
+  rotate: false
+  xy: 10, 394
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_pa_l
+  rotate: false
+  xy: 120, 394
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_pa_r
+  rotate: false
+  xy: 443, 350
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/head_b_1
+  rotate: true
+  xy: 1460, 1513
+  size: 525, 500
+  orig: 525, 500
+  offset: 0, 0
+  index: -1
+FL/head_f
+  rotate: false
+  xy: 1460, 1065
+  size: 475, 438
+  orig: 475, 438
+  offset: 0, 0
+  index: -1
+FL/knee_l
+  rotate: false
+  xy: 1274, 456
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+FL/knee_r
+  rotate: true
+  xy: 1850, 459
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+FL/leg_l
+  rotate: true
+  xy: 506, 460
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+FL/leg_r
+  rotate: true
+  xy: 729, 460
+  size: 113, 200
+  orig: 113, 200
+  offset: 0, 0
+  index: -1
+FL/mouth_c_normal
+  rotate: false
+  xy: 1945, 1189
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_c_positive
+  rotate: false
+  xy: 1945, 1128
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_o_normal
+  rotate: false
+  xy: 1729, 1004
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_o_positive
+  rotate: false
+  xy: 593, 753
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+clock
+  rotate: true
+  xy: 10, 814
+  size: 251, 748
+  orig: 251, 748
+  offset: 0, 0
+  index: -1
+env_00
+  rotate: false
+  xy: 10, 1075
+  size: 1440, 963
+  orig: 1440, 963
+  offset: 0, 0
+  index: -1
+prop/flag_shadow
+  rotate: true
+  xy: 768, 706
+  size: 359, 506
+  orig: 359, 506
+  offset: 0, 0
+  index: -1
+prop/float_base
+  rotate: false
+  xy: 1970, 1250
+  size: 65, 788
+  orig: 65, 788
+  offset: 0, 0
+  index: -1
+prop/float_flag
+  rotate: 180
+  xy: 1447, 545
+  size: 591, 547
+  orig: 591, 547
+  offset: 0, 0
+  index: -1

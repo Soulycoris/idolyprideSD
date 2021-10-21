@@ -1,0 +1,160 @@
+
+spi_sd_env_promo_swimwear-shooting-00_01.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BL/arm_l
+  rotate: false
+  xy: 1765, 1677
+  size: 150, 163
+  orig: 150, 163
+  offset: 0, 0
+  index: -1
+BL/arm_r
+  rotate: false
+  xy: 1628, 1252
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+BL/body_ti
+  rotate: false
+  xy: 1505, 1624
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+BL/face
+  rotate: false
+  xy: 1330, 1227
+  size: 288, 175
+  orig: 288, 175
+  offset: 0, 0
+  index: -1
+BL/forearm_l
+  rotate: true
+  xy: 1765, 1850
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+BL/forearm_r
+  rotate: false
+  xy: 1020, 1180
+  size: 175, 125
+  orig: 175, 125
+  offset: 0, 0
+  index: -1
+BL/hand_choki_l
+  rotate: false
+  xy: 1925, 1740
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_choki_r
+  rotate: false
+  xy: 1912, 1167
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_l
+  rotate: false
+  xy: 1628, 1142
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_r
+  rotate: false
+  xy: 1328, 1117
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_l
+  rotate: false
+  xy: 1438, 1117
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_r
+  rotate: false
+  xy: 1020, 1070
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_l
+  rotate: false
+  xy: 1912, 1057
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_r
+  rotate: false
+  xy: 1548, 1032
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/head_b_1
+  rotate: true
+  xy: 1020, 1500
+  size: 525, 475
+  orig: 525, 475
+  offset: 0, 0
+  index: -1
+BL/knee_l
+  rotate: true
+  xy: 1801, 1277
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+BL/knee_r
+  rotate: false
+  xy: 1205, 1117
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+BL/leg_l
+  rotate: false
+  xy: 1878, 1454
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+BL/leg_r
+  rotate: false
+  xy: 1801, 1067
+  size: 101, 200
+  orig: 101, 200
+  offset: 0, 0
+  index: -1
+camera
+  rotate: true
+  xy: 1505, 1412
+  size: 202, 363
+  orig: 202, 363
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: false
+  xy: 1020, 1315
+  size: 300, 175
+  orig: 300, 175
+  offset: 0, 0
+  index: -1
+flash
+  rotate: false
+  xy: 10, 1025
+  size: 1000, 1000
+  orig: 1000, 1000
+  offset: 0, 0
+  index: -1

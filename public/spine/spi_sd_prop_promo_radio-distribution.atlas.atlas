@@ -1,0 +1,111 @@
+
+spi_sd_prop_promo_radio-distribution.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bottle_cap
+  rotate: true
+  xy: 10, 10
+  size: 38, 36
+  orig: 38, 36
+  offset: 0, 0
+  index: -1
+envelope_f
+  rotate: false
+  xy: 419, 1836
+  size: 169, 182
+  orig: 169, 182
+  offset: 0, 0
+  index: -1
+envelope_m
+  rotate: false
+  xy: 419, 1644
+  size: 169, 182
+  orig: 169, 182
+  offset: 0, 0
+  index: -1
+letter_paper_f
+  rotate: false
+  xy: 310, 718
+  size: 216, 220
+  orig: 216, 220
+  offset: 0, 0
+  index: -1
+letter_paper_m
+  rotate: false
+  xy: 310, 488
+  size: 216, 220
+  orig: 216, 220
+  offset: 0, 0
+  index: -1
+melody_1
+  rotate: false
+  xy: 504, 1338
+  size: 62, 134
+  orig: 62, 134
+  offset: 0, 0
+  index: -1
+melody_2
+  rotate: true
+  xy: 419, 1482
+  size: 152, 147
+  orig: 152, 147
+  offset: 0, 0
+  index: -1
+melody_3
+  rotate: false
+  xy: 419, 1138
+  size: 103, 134
+  orig: 103, 134
+  offset: 0, 0
+  index: -1
+pen_cap_red
+  rotate: true
+  xy: 310, 389
+  size: 89, 222
+  orig: 89, 222
+  offset: 0, 0
+  index: -1
+pen_red
+  rotate: true
+  xy: 10, 58
+  size: 70, 597
+  orig: 70, 597
+  offset: 0, 0
+  index: -1
+radio_script_page
+  rotate: false
+  xy: 10, 1488
+  size: 399, 530
+  orig: 399, 530
+  offset: 0, 0
+  index: -1
+radio_script_title
+  rotate: false
+  xy: 10, 948
+  size: 399, 530
+  orig: 399, 530
+  offset: 0, 0
+  index: -1
+table_b
+  rotate: false
+  xy: 10, 138
+  size: 593, 236
+  orig: 593, 236
+  offset: 0, 0
+  index: -1
+table_f
+  rotate: true
+  xy: 10, 384
+  size: 554, 290
+  orig: 554, 290
+  offset: 0, 0
+  index: -1
+water
+  rotate: false
+  xy: 419, 1282
+  size: 75, 190
+  orig: 75, 190
+  offset: 0, 0
+  index: -1

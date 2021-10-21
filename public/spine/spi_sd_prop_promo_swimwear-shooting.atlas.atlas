@@ -1,0 +1,48 @@
+
+spi_sd_prop_promo_swimwear-shooting.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+juice
+  rotate: false
+  xy: 640, 354
+  size: 63, 102
+  orig: 63, 102
+  offset: 0, 0
+  index: -1
+juice_shadow
+  rotate: false
+  xy: 640, 466
+  size: 55, 29
+  orig: 55, 29
+  offset: 0, 0
+  index: -1
+ukiwa_b
+  rotate: true
+  xy: 533, 354
+  size: 333, 97
+  orig: 333, 97
+  offset: 0, 0
+  index: -1
+ukiwa_blue
+  rotate: false
+  xy: 10, 501
+  size: 334, 202
+  orig: 334, 202
+  offset: 0, 0
+  index: -1
+ukiwa_f
+  rotate: true
+  xy: 418, 354
+  size: 338, 105
+  orig: 338, 105
+  offset: 0, 0
+  index: -1
+ukiwa_water_hi
+  rotate: 180
+  xy: 10, 355
+  size: 398, 136
+  orig: 398, 136
+  offset: 0, 0
+  index: -1

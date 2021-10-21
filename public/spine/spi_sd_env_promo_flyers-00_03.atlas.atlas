@@ -1,0 +1,209 @@
+
+spi_sd_env_promo_flyers-00_03.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FL/arm_l
+  rotate: true
+  xy: 1384, 1457
+  size: 151, 163
+  orig: 151, 163
+  offset: 0, 0
+  index: -1
+FL/arm_r
+  rotate: true
+  xy: 1888, 1458
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+FL/body_lo
+  rotate: false
+  xy: 529, 1500
+  size: 413, 538
+  orig: 413, 538
+  offset: 0, 0
+  index: -1
+FL/eye_c_blink
+  rotate: false
+  xy: 1686, 1623
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eye_c_glad
+  rotate: false
+  xy: 1384, 1610
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eye_o_normal
+  rotate: false
+  xy: 1636, 1508
+  size: 250, 113
+  orig: 250, 113
+  offset: 0, 0
+  index: -1
+FL/eyebrow_1_normal
+  rotate: false
+  xy: 1549, 1431
+  size: 226, 75
+  orig: 226, 75
+  offset: 0, 0
+  index: -1
+FL/face
+  rotate: true
+  xy: 1384, 1725
+  size: 313, 300
+  orig: 313, 300
+  offset: 0, 0
+  index: -1
+FL/forearm_l
+  rotate: true
+  xy: 1863, 1863
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+FL/forearm_r
+  rotate: false
+  xy: 1863, 1748
+  size: 175, 113
+  orig: 175, 113
+  offset: 0, 0
+  index: -1
+FL/hand_choki_l
+  rotate: false
+  xy: 1938, 1646
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_choki_r
+  rotate: false
+  xy: 394, 1436
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_gu_l
+  rotate: false
+  xy: 1777, 1406
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_gu_r
+  rotate: false
+  xy: 496, 1398
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_idle_l
+  rotate: false
+  xy: 598, 1398
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_idle_r
+  rotate: false
+  xy: 700, 1398
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_pa_l
+  rotate: false
+  xy: 802, 1398
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/hand_pa_r
+  rotate: false
+  xy: 1879, 1356
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+FL/head_b_1
+  rotate: false
+  xy: 2, 1538
+  size: 525, 500
+  orig: 525, 500
+  offset: 0, 0
+  index: -1
+FL/head_f
+  rotate: true
+  xy: 944, 1563
+  size: 475, 438
+  orig: 475, 438
+  offset: 0, 0
+  index: -1
+FL/knee_l
+  rotate: true
+  xy: 1159, 1436
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+FL/knee_r
+  rotate: true
+  xy: 204, 1423
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+FL/leg_l
+  rotate: true
+  xy: 944, 1448
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+FL/leg_r
+  rotate: true
+  xy: 2, 1423
+  size: 113, 200
+  orig: 113, 200
+  offset: 0, 0
+  index: -1
+FL/mouth_c_normal
+  rotate: false
+  xy: 1349, 1404
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_c_positive
+  rotate: false
+  xy: 1439, 1404
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_o_normal
+  rotate: false
+  xy: 904, 1395
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+FL/mouth_o_positive
+  rotate: false
+  xy: 994, 1395
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: true
+  xy: 1686, 1738
+  size: 300, 175
+  orig: 300, 175
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+spi_sd_prop_fan_handshake.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cone
+  rotate: true
+  xy: 10, 10
+  size: 116, 190
+  orig: 116, 190
+  offset: 0, 0
+  index: -1
+effect/el_rect_round
+  rotate: false
+  xy: 10, 136
+  size: 400, 400
+  orig: 400, 400
+  offset: 0, 0
+  index: -1
+end_print
+  rotate: true
+  xy: 210, 47
+  size: 79, 109
+  orig: 79, 109
+  offset: 0, 0
+  index: -1

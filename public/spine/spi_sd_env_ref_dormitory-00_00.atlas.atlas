@@ -1,0 +1,20 @@
+
+spi_sd_env_ref_dormitory-00_00.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fg
+  rotate: false
+  xy: 10, 354
+  size: 495, 587
+  orig: 495, 587
+  offset: 0, 0
+  index: -1
+tv_glow
+  rotate: false
+  xy: 515, 418
+  size: 426, 523
+  orig: 426, 523
+  offset: 0, 0
+  index: -1

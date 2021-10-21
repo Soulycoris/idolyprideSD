@@ -1,0 +1,62 @@
+
+spi_sd_prop_fan_sign.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cd_l
+  rotate: false
+  xy: 618, 673
+  size: 236, 150
+  orig: 236, 150
+  offset: 0, 0
+  index: -1
+cd_r
+  rotate: false
+  xy: 618, 833
+  size: 238, 153
+  orig: 238, 153
+  offset: 0, 0
+  index: -1
+chair
+  rotate: true
+  xy: 315, 761
+  size: 225, 293
+  orig: 225, 293
+  offset: 0, 0
+  index: -1
+desk
+  rotate: false
+  xy: 10, 771
+  size: 295, 215
+  orig: 295, 215
+  offset: 0, 0
+  index: -1
+desk_shadow
+  rotate: false
+  xy: 10, 673
+  size: 290, 88
+  orig: 290, 88
+  offset: 0, 0
+  index: -1
+end_print
+  rotate: true
+  xy: 864, 731
+  size: 79, 109
+  orig: 79, 109
+  offset: 0, 0
+  index: -1
+pen
+  rotate: true
+  xy: 310, 703
+  size: 48, 225
+  orig: 48, 225
+  offset: 0, 0
+  index: -1
+sign
+  rotate: true
+  xy: 866, 820
+  size: 166, 120
+  orig: 166, 120
+  offset: 0, 0
+  index: -1

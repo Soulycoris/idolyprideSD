@@ -1,0 +1,20 @@
+
+spi_sd_prop_promo_event-booth.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rootex_paper_1
+  rotate: false
+  xy: 10, 233
+  size: 102, 213
+  orig: 102, 213
+  offset: 0, 0
+  index: -1
+rootex_paper_2
+  rotate: false
+  xy: 10, 10
+  size: 102, 213
+  orig: 102, 213
+  offset: 0, 0
+  index: -1

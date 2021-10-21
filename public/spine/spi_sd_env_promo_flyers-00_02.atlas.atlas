@@ -1,0 +1,153 @@
+
+spi_sd_env_promo_flyers-00_02.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BL/arm_l
+  rotate: false
+  xy: 1300, 1477
+  size: 150, 163
+  orig: 150, 163
+  offset: 0, 0
+  index: -1
+BL/arm_r
+  rotate: true
+  xy: 1312, 1312
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+BL/body_ti
+  rotate: false
+  xy: 529, 1404
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+BL/face
+  rotate: true
+  xy: 958, 1404
+  size: 288, 175
+  orig: 288, 175
+  offset: 0, 0
+  index: -1
+BL/forearm_l
+  rotate: false
+  xy: 1135, 1312
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+BL/forearm_r
+  rotate: false
+  xy: 1464, 1325
+  size: 175, 125
+  orig: 175, 125
+  offset: 0, 0
+  index: -1
+BL/hand_choki_l
+  rotate: false
+  xy: 731, 1302
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_choki_r
+  rotate: false
+  xy: 833, 1302
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_l
+  rotate: false
+  xy: 935, 1302
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_r
+  rotate: false
+  xy: 1591, 1452
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_l
+  rotate: false
+  xy: 1641, 1350
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_r
+  rotate: false
+  xy: 1693, 1452
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_l
+  rotate: false
+  xy: 1705, 1554
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_r
+  rotate: false
+  xy: 1705, 1656
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/head_b_1
+  rotate: false
+  xy: 2, 1330
+  size: 525, 475
+  orig: 525, 475
+  offset: 0, 0
+  index: -1
+BL/knee_l
+  rotate: false
+  xy: 1464, 1452
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+BL/knee_r
+  rotate: true
+  xy: 1515, 1642
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+BL/leg_l
+  rotate: true
+  xy: 1300, 1642
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+BL/leg_r
+  rotate: true
+  xy: 529, 1301
+  size: 101, 200
+  orig: 101, 200
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: true
+  xy: 781, 1404
+  size: 300, 175
+  orig: 300, 175
+  offset: 0, 0
+  index: -1
+flyer_1
+  rotate: false
+  xy: 1135, 1477
+  size: 163, 215
+  orig: 163, 215
+  offset: 0, 0
+  index: -1

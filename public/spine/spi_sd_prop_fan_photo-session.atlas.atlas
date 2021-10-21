@@ -1,0 +1,41 @@
+
+spi_sd_prop_fan_photo-session.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cone
+  rotate: true
+  xy: 10, 10
+  size: 116, 190
+  orig: 116, 190
+  offset: 0, 0
+  index: -1
+end_print
+  rotate: false
+  xy: 337, 341
+  size: 79, 109
+  orig: 79, 109
+  offset: 0, 0
+  index: -1
+photo_1
+  rotate: false
+  xy: 210, 28
+  size: 69, 98
+  orig: 69, 98
+  offset: 0, 0
+  index: -1
+photo_2
+  rotate: false
+  xy: 337, 233
+  size: 68, 98
+  orig: 68, 98
+  offset: 0, 0
+  index: -1
+reflector
+  rotate: false
+  xy: 10, 136
+  size: 317, 314
+  orig: 317, 314
+  offset: 0, 0
+  index: -1

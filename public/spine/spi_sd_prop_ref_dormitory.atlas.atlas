@@ -1,0 +1,188 @@
+
+spi_sd_prop_ref_dormitory.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+book_b
+  rotate: false
+  xy: 1154, 1743
+  size: 241, 172
+  orig: 241, 172
+  offset: 0, 0
+  index: -1
+book_f
+  rotate: false
+  xy: 356, 1603
+  size: 333, 176
+  orig: 333, 176
+  offset: 0, 0
+  index: -1
+book_page
+  rotate: false
+  xy: 1887, 1846
+  size: 119, 160
+  orig: 119, 160
+  offset: 0, 0
+  index: -1
+deck_t
+  rotate: false
+  xy: 699, 1409
+  size: 445, 337
+  orig: 445, 337
+  offset: 0, 0
+  index: -1
+desk_b
+  rotate: false
+  xy: 10, 1267
+  size: 590, 326
+  orig: 590, 326
+  offset: 0, 0
+  index: -1
+glass_1
+  rotate: true
+  xy: 1154, 1925
+  size: 81, 126
+  orig: 81, 126
+  offset: 0, 0
+  index: -1
+glass_1_1
+  rotate: true
+  xy: 1290, 1925
+  size: 81, 110
+  orig: 81, 110
+  offset: 0, 0
+  index: -1
+glass_2
+  rotate: true
+  xy: 1002, 1926
+  size: 80, 142
+  orig: 80, 142
+  offset: 0, 0
+  index: -1
+glass_3
+  rotate: true
+  xy: 576, 1940
+  size: 66, 91
+  orig: 66, 91
+  offset: 0, 0
+  index: -1
+gyogyotto_san
+  rotate: false
+  xy: 1746, 1598
+  size: 248, 238
+  orig: 248, 238
+  offset: 0, 0
+  index: -1
+knitting_hari
+  rotate: true
+  xy: 148, 1979
+  size: 27, 159
+  orig: 27, 159
+  offset: 0, 0
+  index: -1
+knitting_himo
+  rotate: true
+  xy: 317, 1950
+  size: 56, 249
+  orig: 56, 249
+  offset: 0, 0
+  index: -1
+knitting_out
+  rotate: true
+  xy: 10, 1865
+  size: 104, 186
+  orig: 104, 186
+  offset: 0, 0
+  index: -1
+knitting_tama
+  rotate: true
+  xy: 1563, 1908
+  size: 98, 100
+  orig: 98, 100
+  offset: 0, 0
+  index: -1
+korokoro_1
+  rotate: false
+  xy: 792, 1930
+  size: 82, 76
+  orig: 82, 76
+  offset: 0, 0
+  index: -1
+korokoro_2
+  rotate: false
+  xy: 677, 1935
+  size: 105, 71
+  orig: 105, 71
+  offset: 0, 0
+  index: -1
+korokoro_3
+  rotate: false
+  xy: 884, 1928
+  size: 108, 78
+  orig: 108, 78
+  offset: 0, 0
+  index: -1
+magazine_a_1
+  rotate: false
+  xy: 458, 1806
+  size: 205, 124
+  orig: 205, 124
+  offset: 0, 0
+  index: -1
+magazine_a_2
+  rotate: true
+  xy: 1410, 1911
+  size: 95, 143
+  orig: 95, 143
+  offset: 0, 0
+  index: -1
+magazine_a_3
+  rotate: true
+  xy: 931, 1756
+  size: 160, 213
+  orig: 160, 213
+  offset: 0, 0
+  index: -1
+magazine_b
+  rotate: false
+  xy: 673, 1789
+  size: 248, 129
+  orig: 248, 129
+  offset: 0, 0
+  index: -1
+notebook
+  rotate: false
+  xy: 1405, 1723
+  size: 331, 169
+  orig: 331, 169
+  offset: 0, 0
+  index: -1
+notebook_lyrics_b
+  rotate: false
+  xy: 206, 1827
+  size: 242, 113
+  orig: 242, 113
+  offset: 0, 0
+  index: -1
+notebook_lyrics_f
+  rotate: false
+  xy: 10, 1644
+  size: 336, 173
+  orig: 336, 173
+  offset: 0, 0
+  index: -1
+pencil
+  rotate: true
+  xy: 10, 1980
+  size: 26, 128
+  orig: 26, 128
+  offset: 0, 0
+  index: -1
+remote
+  rotate: false
+  xy: 1673, 1902
+  size: 204, 104
+  orig: 204, 104
+  offset: 0, 0
+  index: -1

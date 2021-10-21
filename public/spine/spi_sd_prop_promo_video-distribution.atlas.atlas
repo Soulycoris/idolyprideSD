@@ -1,0 +1,97 @@
+
+spi_sd_prop_promo_video-distribution.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bowl_1
+  rotate: true
+  xy: 569, 275
+  size: 220, 111
+  orig: 220, 111
+  offset: 0, 0
+  index: -1
+bowl_2
+  rotate: true
+  xy: 446, 314
+  size: 225, 113
+  orig: 225, 113
+  offset: 0, 0
+  index: -1
+cabbage
+  rotate: true
+  xy: 267, 339
+  size: 200, 169
+  orig: 200, 169
+  offset: 0, 0
+  index: -1
+camera_1
+  rotate: true
+  xy: 10, 200
+  size: 68, 52
+  orig: 68, 52
+  offset: 0, 0
+  index: -1
+camera_2
+  rotate: true
+  xy: 247, 164
+  size: 165, 119
+  orig: 165, 119
+  offset: 0, 0
+  index: -1
+kitchen_knife_1
+  rotate: true
+  xy: 10, 28
+  size: 162, 44
+  orig: 162, 44
+  offset: 0, 0
+  index: -1
+kitchen_knife_2
+  rotate: true
+  xy: 10, 278
+  size: 261, 59
+  orig: 261, 59
+  offset: 0, 0
+  index: -1
+outer_leaf_1
+  rotate: true
+  xy: 79, 347
+  size: 192, 178
+  orig: 192, 178
+  offset: 0, 0
+  index: -1
+outer_leaf_2
+  rotate: false
+  xy: 376, 140
+  size: 99, 164
+  orig: 99, 164
+  offset: 0, 0
+  index: -1
+pos1_desk
+  rotate: true
+  xy: 569, 505
+  size: 442, 310
+  orig: 442, 310
+  offset: 0, 0
+  index: -1
+pos2_desk
+  rotate: false
+  xy: 10, 549
+  size: 549, 398
+  orig: 549, 398
+  offset: 0, 0
+  index: -1
+sengiri
+  rotate: true
+  xy: 247, 10
+  size: 144, 84
+  orig: 144, 84
+  offset: 0, 0
+  index: -1
+slice
+  rotate: true
+  xy: 79, 160
+  size: 177, 158
+  orig: 177, 158
+  offset: 0, 0
+  index: -1

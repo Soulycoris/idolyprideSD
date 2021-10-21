@@ -1,0 +1,27 @@
+
+spi_sd_prop_ref_hot-spring.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hamon
+  rotate: true
+  xy: 297, 221
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+heri
+  rotate: false
+  xy: 10, 104
+  size: 292, 107
+  orig: 292, 107
+  offset: 0, 0
+  index: -1
+oyu
+  rotate: false
+  xy: 10, 221
+  size: 277, 164
+  orig: 277, 164
+  offset: 0, 0
+  index: -1

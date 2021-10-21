@@ -1,0 +1,118 @@
+
+spi_sd_eff_tour.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/drop
+  rotate: true
+  xy: 379, 343
+  size: 107, 177
+  orig: 107, 177
+  offset: 0, 0
+  index: -1
+effect/el_circle
+  rotate: false
+  xy: 80, 644
+  size: 180, 180
+  orig: 180, 180
+  offset: 0, 0
+  index: -1
+effect/el_circle_fill
+  rotate: false
+  xy: 270, 644
+  size: 180, 180
+  orig: 180, 180
+  offset: 0, 0
+  index: -1
+effect/el_glow
+  rotate: false
+  xy: 10, 10
+  size: 359, 359
+  orig: 359, 359
+  offset: 0, 0
+  index: -1
+effect/el_gradation
+  rotate: false
+  xy: 10, 379
+  size: 60, 445
+  orig: 60, 445
+  offset: 0, 0
+  index: -1
+effect/el_rect_round
+  rotate: false
+  xy: 247, 514
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+effect/gloomy_1
+  rotate: true
+  xy: 549, 182
+  size: 151, 119
+  orig: 151, 119
+  offset: 0, 0
+  index: -1
+effect/gloomy_2
+  rotate: false
+  xy: 379, 214
+  size: 160, 119
+  orig: 160, 119
+  offset: 0, 0
+  index: -1
+effect/heart
+  rotate: false
+  xy: 625, 699
+  size: 144, 125
+  orig: 144, 125
+  offset: 0, 0
+  index: -1
+effect/kira_1
+  rotate: true
+  xy: 562, 537
+  size: 125, 164
+  orig: 125, 164
+  offset: 0, 0
+  index: -1
+effect/kira_2
+  rotate: false
+  xy: 379, 49
+  size: 117, 155
+  orig: 117, 155
+  offset: 0, 0
+  index: -1
+effect/shock_1
+  rotate: true
+  xy: 379, 460
+  size: 174, 173
+  orig: 174, 173
+  offset: 0, 0
+  index: -1
+effect/shock_2
+  rotate: true
+  xy: 80, 478
+  size: 156, 157
+  orig: 156, 157
+  offset: 0, 0
+  index: -1
+effect/smoke_1
+  rotate: true
+  xy: 460, 672
+  size: 152, 155
+  orig: 152, 155
+  offset: 0, 0
+  index: -1
+effect/smoke_2
+  rotate: false
+  xy: 566, 420
+  size: 127, 107
+  orig: 127, 107
+  offset: 0, 0
+  index: -1
+effect/star
+  rotate: true
+  xy: 247, 398
+  size: 106, 101
+  orig: 106, 101
+  offset: 0, 0
+  index: -1

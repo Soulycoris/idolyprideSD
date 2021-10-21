@@ -2,8 +2,8 @@
   <div class="container">
     <el-form :model="form" size="mini" class="form" label-width="50px">
       <el-form-item label="骨骼:">
-        <el-select v-model="form.skeleton.value" placeholder="骨骼" @change="eventChange($event, 'skeleton')">
-          <el-option :label="item" :value="item" v-for="(item, index) in skeletonsList" :key="index"></el-option>
+        <el-select v-model="form.skeleton.value" placeholder="骨骼" filterable @change="eventChange($event, 'skeleton')">
+          <el-option :label="item" :value="item" v-for="(item, index) in assetNameList" :key="index"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="动画:">
@@ -12,9 +12,9 @@
         </el-select>
       </el-form-item>
       <el-form-item label="皮肤:">
-        <el-select v-model="form.skin.value" placeholder="皮肤" @change="eventChange($event, 'skin')">
-          <el-option :label="item.name" :value="item.name" v-for="(item, index) in skinsList" :key="index"></el-option>
-        </el-select>
+        <el-checkbox-group class="skins-group" v-model="form.skins.value" @change="eventChange($event, 'skins')">
+          <el-checkbox :label="item.name" v-for="(item, index) in skinsList" :key="index" />
+        </el-checkbox-group>
       </el-form-item>
     </el-form>
     <canvas id="canvas"></canvas>
@@ -22,8 +22,9 @@
 </template>
 <script setup lang="ts">
 import { defineComponent, reactive, toRefs, onMounted, computed, ref, Ref } from 'vue';
-// import name from '../../assets/Spine/name.js';
-import spine from '../src/assets/spine/spine-webgl';
+import assetNameList from './assets/spine/name.js';
+import spine from './assets/spine/spine-webgl';
+// console.log(assetNameList);
 
 interface Form {
   skeleton: Ref<string>;
@@ -53,20 +54,19 @@ let mvp = new spine.webgl.Matrix4();
 let skeletonRenderer: spine.webgl.SkeletonRenderer;
 let assetManager: spine.webgl.AssetManager;
 
-let debugRenderer;
-let shapes;
+// let debugRenderer;
 
 let lastFrameTime = 0;
 let skeletons: Skeletons = {};
 let activeSkeleton = 'spi_sd_chr_cos_mei-idol-01';
-// let activeSkeleton = 'spineboy';
-let debugShader;
+
+let skinAll = new spine.Skin('body');
 
 let form: Form = {
   skeleton: ref('spi_sd_chr_cos_mei-idol-01'),
   animation: ref('loop_idle'),
   skin: ref('body_FL'),
-  skins: ref([]),
+  skins: ref(['body_FL', 'head_FL', 'shadow']),
 };
 
 onMounted(() => {
@@ -100,27 +100,36 @@ function init() {
   assetManager = new spine.webgl.AssetManager(gl);
 
   // Create a debug renderer and the ShapeRenderer it needs to render lines.
-  debugRenderer = new spine.webgl.SkeletonDebugRenderer(gl);
-  debugRenderer.drawRegionAttachments = true;
-  debugRenderer.drawBoundingBoxes = true;
-  debugRenderer.drawMeshHull = true;
-  debugRenderer.drawMeshTriangles = true;
-  debugRenderer.drawPaths = true;
-  debugShader = spine.webgl.Shader.newColored(gl);
-  shapes = new spine.webgl.ShapeRenderer(gl);
+  // debugRenderer = new spine.webgl.SkeletonDebugRenderer(gl);
+  // debugRenderer.drawRegionAttachments = true;
+  // debugRenderer.drawBoundingBoxes = true;
+  // debugRenderer.drawMeshHull = true;
+  // debugRenderer.drawMeshTriangles = true;
+  // debugRenderer.drawPaths = true;
 
   // Tell AssetManager to load the resources for each skeleton, including the exported .skel file, the .atlas file and the .png
   // file for the atlas. We then wait until all resources are loaded in the load() method.
-  assetManager.loadText('spine/spi_sd_chr_cos_mei-idol-01.json');
-  assetManager.loadTextureAtlas('spine/spi_sd_chr_cos_mei-idol-01.atlas');
 
+  // assetNameList.forEach((name) => {
+  //   assetManager.loadText(`spine/${name}.skl.skl`);
+  //   assetManager.loadTextureAtlas(`spine/${name}.atlas.atlas`);
+  // });
+  // assetManager.loadText(`spine/spi_sd_chr_mot_cmn.skl.skl`);
+  // assetManager.loadTextureAtlas(`spine/${activeSkeleton}.atlas.atlas`);
+
+  loadAssets(activeSkeleton);
+}
+function loadAssets(asstesName: string) {
+  assetManager.loadText(`spine/${asstesName}.skl.skl`);
+  assetManager.loadTextureAtlas(`spine/${asstesName}.atlas.atlas`);
+  // activeSkeleton = 'spi_sd_chr_mot_cmn';
   requestAnimationFrame(load);
 }
 
 function load() {
   // Wait until the AssetManager has loaded all resources, then load the skeletons.
   if (assetManager.isLoadingComplete()) {
-    skeletons['spi_sd_chr_cos_mei-idol-01'] = loadSkeleton('spi_sd_chr_cos_mei-idol-01', 'loop_idle', false, 'body_FL');
+    skeletons[activeSkeleton] = loadSkeleton(activeSkeleton);
     setupUI();
     lastFrameTime = Date.now() / 1000;
     requestAnimationFrame(render); // Loading is done, call render every frame.
@@ -129,11 +138,13 @@ function load() {
   }
 }
 
-function loadSkeleton(name: string, initialAnimation: string, premultipliedAlpha = false, skin: string): skeletonData {
-  if (skin === undefined) skin = 'default';
-
+function loadSkeleton(name: string): skeletonData {
   // Load the texture atlas using name.atlas from the AssetManager.
-  let atlas = assetManager.get('spine/' + name + '.atlas');
+
+  // let atlas = assetManager.get('spine/spi_sd_chr_cos_mei-idol-01.atlas.atlas') as spine.TextureAtlas;
+  let atlas = assetManager.get('spine/' + name + '.atlas.atlas') as spine.TextureAtlas;
+  console.log(atlas);
+
   // Create a AtlasAttachmentLoader that resolves region, mesh, boundingbox and path attachments
   let atlasLoader = new spine.AtlasAttachmentLoader(atlas);
 
@@ -142,34 +153,38 @@ function loadSkeleton(name: string, initialAnimation: string, premultipliedAlpha
 
   // Set the scale to apply during parsing, parse the file, and create a new skeleton.
   skeletonLoader.scale = 1;
-  let skeletonData = skeletonLoader.readSkeletonData(assetManager.get('spine/' + name + '.json'));
+  let skeletonData = skeletonLoader.readSkeletonData(assetManager.get('spine/' + name + '.skl.skl'));
   let skeleton = new spine.Skeleton(skeletonData);
+  console.log(skeletonData);
 
-  let skinAll = new spine.Skin('body');
-  skinAll.addSkin(skeletonData.skins[1]);
-  skinAll.addSkin(skeletonData.skins[3]);
-  skinAll.addSkin(skeletonData.skins[5]);
-
-  skeleton.setSkin(skinAll);
+  if (skeletonData.skins[5]) {
+    skinAll.addSkin(skeletonData.skins[1]);
+    skinAll.addSkin(skeletonData.skins[3]);
+    skinAll.addSkin(skeletonData.skins[5]);
+    skeleton.setSkin(skinAll);
+  } else {
+    skeleton.setSkinByName('default');
+  }
 
   let bounds = calculateSetupPoseBounds(skeleton);
 
   // Create an AnimationState, and set the initial animation in looping mode.
   let animationStateData = new spine.AnimationStateData(skeleton.data);
   let animationState = new spine.AnimationState(animationStateData);
+  let animations = skeletonData.animations[1]?.name ?? skeletonData.animations[0].name;
+  animationState.setAnimation(0, animations, true);
 
-  animationState.setAnimation(0, initialAnimation, true);
-  animationState.addListener({
-    start: (entry) => {},
-    interrupt: (entry) => {},
-    end: (entry) => {},
-    dispose: (entry) => {},
-    complete: (entry) => {},
-    event: (entry, event) => {},
-  });
+  // animationState.addListener({
+  //   start: (entry) => {},
+  //   interrupt: (entry) => {},
+  //   end: (entry) => {},
+  //   dispose: (entry) => {},
+  //   complete: (entry) => {},
+  //   event: (entry, event) => {},
+  // });
 
   // Pack everything up and return to caller.
-  return { skeleton: skeleton, state: animationState, bounds: bounds, premultipliedAlpha: premultipliedAlpha };
+  return { skeleton: skeleton, state: animationState, bounds: bounds, premultipliedAlpha: false };
 }
 
 function calculateSetupPoseBounds(skeleton: spine.Skeleton) {
@@ -181,21 +196,31 @@ function calculateSetupPoseBounds(skeleton: spine.Skeleton) {
   return { offset: offset, size: size };
 }
 
-function eventChange(val: string, tag: string) {
-  console.log(val, tag);
+function eventChange(val: string | string[], tag: string) {
+  // console.log(val, tag);
   let skeleton = skeletons[activeSkeleton].skeleton;
   let state = skeletons[activeSkeleton].state;
+
   if (tag === 'animation') {
     skeleton.setToSetupPose();
-    state.setAnimation(0, val, true);
-  } else if (tag === 'skin') {
-    skeleton.setSkinByName(val);
+    state.setAnimation(0, val as string, true);
+  } else if (tag === 'skins') {
+    skinAll.clear();
+    skinsList.value.forEach((e) => {
+      if (val.includes(e.name)) skinAll.addSkin(e);
+    });
+    skeleton.setSkin(skinAll);
     skeleton.setSlotsToSetupPose();
   } else if (tag === 'skeleton') {
     form.animation.value = '';
     form.skin.value = '';
-    activeSkeleton = val;
-    setupUI();
+    activeSkeleton = val as string;
+    let res = assetManager.get('spine/' + activeSkeleton + '.skl.skl');
+    if (!res) {
+      loadAssets(activeSkeleton);
+    } else {
+      setupUI();
+    }
   }
 }
 
@@ -203,15 +228,14 @@ function setupUI() {
   if (!skeletonsList.value.length) {
     skeletonsList.value = Object.keys(skeletons);
   }
-
   let skeleton = skeletons[activeSkeleton].skeleton;
-  animationList.value.splice(0);
-  skinsList.value.splice(0);
-
-  animationList.value.push(...skeleton.data.animations);
-  skinsList.value.push(...skeleton.data.skins);
+  animationList.value.splice(0, animationList.value.length, ...skeleton.data.animations);
+  skinsList.value.splice(0, skinsList.value.length, ...skeleton.data.skins);
 }
 function render() {
+  if (!skeletons[activeSkeleton]) {
+    return;
+  }
   let now = Date.now() / 1000;
   let delta = now - lastFrameTime;
   lastFrameTime = now;
@@ -222,7 +246,6 @@ function render() {
     gl.clearColor(0.3, 0.3, 0.3, 1);
     gl.clear(gl.COLOR_BUFFER_BIT);
   }
-
   // Apply the animation state based on the delta time.
   let skeleton = skeletons[activeSkeleton].skeleton;
   let state = skeletons[activeSkeleton].state;
@@ -289,6 +312,10 @@ html {
 .form {
   flex: none;
   padding: 16px;
+  .skins-group {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #canvas {
   flex: 1;

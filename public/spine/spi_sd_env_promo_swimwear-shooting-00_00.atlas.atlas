@@ -1,0 +1,27 @@
+
+spi_sd_env_promo_swimwear-shooting-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hashigo
+  rotate: false
+  xy: 1140, 532
+  size: 149, 203
+  orig: 149, 203
+  offset: 0, 0
+  index: -1
+water
+  rotate: false
+  xy: 2, 2
+  size: 1136, 733
+  orig: 1136, 733
+  offset: 0, 0
+  index: -1
+water_hi
+  rotate: false
+  xy: 2, 737
+  size: 1214, 770
+  orig: 1214, 770
+  offset: 0, 0
+  index: -1

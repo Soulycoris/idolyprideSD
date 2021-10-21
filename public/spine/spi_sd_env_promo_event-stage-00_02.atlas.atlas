@@ -1,0 +1,181 @@
+
+spi_sd_env_promo_event-stage-00_02.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BC/arm_l
+  rotate: false
+  xy: 1230, 1260
+  size: 200, 280
+  orig: 200, 280
+  offset: 0, 0
+  index: -1
+BC/arm_r
+  rotate: true
+  xy: 1440, 1290
+  size: 200, 280
+  orig: 200, 280
+  offset: 0, 0
+  index: -1
+BC/body_ti
+  rotate: false
+  xy: 820, 1390
+  size: 400, 640
+  orig: 400, 640
+  offset: 0, 0
+  index: -1
+BC/forearm_l
+  rotate: false
+  xy: 1750, 1750
+  size: 220, 280
+  orig: 220, 280
+  offset: 0, 0
+  index: -1
+BC/forearm_r
+  rotate: false
+  xy: 1520, 1750
+  size: 220, 280
+  orig: 220, 280
+  offset: 0, 0
+  index: -1
+BC/hand_choki_l
+  rotate: false
+  xy: 1770, 1140
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_choki_r
+  rotate: false
+  xy: 1130, 1090
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_gu_l
+  rotate: false
+  xy: 340, 1080
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_gu_r
+  rotate: false
+  xy: 510, 1080
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_idle_l
+  rotate: false
+  xy: 680, 1030
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_idle_r
+  rotate: false
+  xy: 850, 1030
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_pa_l
+  rotate: false
+  xy: 1300, 970
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/hand_pa_r
+  rotate: false
+  xy: 1470, 970
+  size: 160, 160
+  orig: 160, 160
+  offset: 0, 0
+  index: -1
+BC/head_b_1
+  rotate: false
+  xy: 10, 1250
+  size: 800, 780
+  orig: 800, 780
+  offset: 0, 0
+  index: -1
+BC/knee_l
+  rotate: true
+  xy: 1730, 1310
+  size: 180, 300
+  orig: 180, 300
+  offset: 0, 0
+  index: -1
+BC/knee_r
+  rotate: true
+  xy: 820, 1200
+  size: 180, 300
+  orig: 180, 300
+  offset: 0, 0
+  index: -1
+BC/leg_l
+  rotate: true
+  xy: 1440, 1140
+  size: 140, 320
+  orig: 140, 320
+  offset: 0, 0
+  index: -1
+BC/leg_r
+  rotate: true
+  xy: 10, 1100
+  size: 140, 320
+  orig: 140, 320
+  offset: 0, 0
+  index: -1
+effect/kira_1
+  rotate: false
+  xy: 1520, 1500
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+effect/kira_2
+  rotate: false
+  xy: 1770, 1500
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: true
+  xy: 1230, 1550
+  size: 480, 280
+  orig: 480, 280
+  offset: 0, 0
+  index: -1
+emitting_heart
+  rotate: false
+  xy: 1640, 1014
+  size: 130, 116
+  orig: 130, 116
+  offset: 0, 0
+  index: -1
+emitting_normal
+  rotate: true
+  xy: 1780, 1074
+  size: 56, 160
+  orig: 56, 160
+  offset: 0, 0
+  index: -1
+grip_kira
+  rotate: false
+  xy: 1980, 1956
+  size: 39, 74
+  orig: 39, 74
+  offset: 0, 0
+  index: -1
+grip_normal
+  rotate: false
+  xy: 1979, 1872
+  size: 39, 74
+  orig: 39, 74
+  offset: 0, 0
+  index: -1

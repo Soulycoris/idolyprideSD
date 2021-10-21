@@ -1,0 +1,27 @@
+
+spi_sd_prop_live.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mic
+  rotate: true
+  xy: 10, 73
+  size: 111, 333
+  orig: 111, 333
+  offset: 0, 0
+  index: -1
+spot_floor
+  rotate: false
+  xy: 10, 10
+  size: 344, 53
+  orig: 344, 53
+  offset: 0, 0
+  index: -1
+spot_laser
+  rotate: false
+  xy: 10, 194
+  size: 346, 752
+  orig: 346, 752
+  offset: 0, 0
+  index: -1

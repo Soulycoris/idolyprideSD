@@ -1,0 +1,34 @@
+
+spi_sd_prop_promo_police.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/shadow
+  rotate: false
+  xy: 10, 143
+  size: 240, 140
+  orig: 240, 140
+  offset: 0, 0
+  index: -1
+mic
+  rotate: false
+  xy: 249, 66
+  size: 22, 67
+  orig: 22, 67
+  offset: 0, 0
+  index: -1
+mic_stand
+  rotate: true
+  xy: 10, 49
+  size: 84, 229
+  orig: 84, 229
+  offset: 0, 0
+  index: -1
+mic_stand_2
+  rotate: true
+  xy: 260, 143
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+spi_sd_env_ref_hot-spring-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fg
+  rotate: false
+  xy: 10, 381
+  size: 864, 1404
+  orig: 864, 1404
+  offset: 0, 0
+  index: -1
+yuge_a1
+  rotate: false
+  xy: 1290, 679
+  size: 409, 476
+  orig: 409, 476
+  offset: 0, 0
+  index: -1
+yuge_a2
+  rotate: false
+  xy: 1290, 679
+  size: 409, 476
+  orig: 409, 476
+  offset: 0, 0
+  index: -1
+yuge_a3
+  rotate: false
+  xy: 1290, 679
+  size: 409, 476
+  orig: 409, 476
+  offset: 0, 0
+  index: -1
+yuge_a4
+  rotate: false
+  xy: 884, 647
+  size: 391, 491
+  orig: 391, 491
+  offset: 0, 0
+  index: -1
+yuge_a5
+  rotate: false
+  xy: 1285, 293
+  size: 500, 376
+  orig: 500, 376
+  offset: 0, 0
+  index: -1
+yuge_b1
+  rotate: true
+  xy: 884, 1148
+  size: 637, 396
+  orig: 637, 396
+  offset: 0, 0
+  index: -1
+yuge_b2
+  rotate: true
+  xy: 1290, 1165
+  size: 620, 376
+  orig: 620, 376
+  offset: 0, 0
+  index: -1

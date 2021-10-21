@@ -1,0 +1,160 @@
+
+spi_sd_env_promo_fashion-model-00_01.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BL/arm_l
+  rotate: false
+  xy: 495, 558
+  size: 150, 163
+  orig: 150, 163
+  offset: 0, 0
+  index: -1
+BL/arm_r
+  rotate: true
+  xy: 655, 558
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+BL/body_ti
+  rotate: false
+  xy: 10, 83
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+BL/face
+  rotate: true
+  xy: 495, 731
+  size: 288, 175
+  orig: 288, 175
+  offset: 0, 0
+  index: -1
+BL/forearm_l
+  rotate: false
+  xy: 590, 11
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+BL/forearm_r
+  rotate: true
+  xy: 667, 373
+  size: 175, 125
+  orig: 175, 125
+  offset: 0, 0
+  index: -1
+BL/hand_choki_l
+  rotate: false
+  xy: 480, 11
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_choki_r
+  rotate: false
+  xy: 802, 448
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_l
+  rotate: false
+  xy: 775, 140
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_r
+  rotate: false
+  xy: 775, 30
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_l
+  rotate: false
+  xy: 865, 338
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_r
+  rotate: false
+  xy: 815, 721
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_l
+  rotate: false
+  xy: 815, 611
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_r
+  rotate: false
+  xy: 912, 501
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/head_b_1
+  rotate: true
+  xy: 10, 494
+  size: 525, 475
+  orig: 525, 475
+  offset: 0, 0
+  index: -1
+BL/knee_l
+  rotate: false
+  xy: 803, 831
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+BL/knee_r
+  rotate: true
+  xy: 667, 250
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+BL/leg_l
+  rotate: false
+  xy: 680, 806
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+BL/leg_r
+  rotate: true
+  xy: 270, 10
+  size: 101, 200
+  orig: 101, 200
+  offset: 0, 0
+  index: -1
+camera
+  rotate: false
+  xy: 270, 121
+  size: 202, 363
+  orig: 202, 363
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: true
+  xy: 482, 184
+  size: 300, 175
+  orig: 300, 175
+  offset: 0, 0
+  index: -1
+flash
+  rotate: false
+  xy: 10, 1029
+  size: 1005, 1005
+  orig: 1005, 1005
+  offset: 0, 0
+  index: -1

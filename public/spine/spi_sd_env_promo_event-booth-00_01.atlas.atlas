@@ -1,0 +1,153 @@
+
+spi_sd_env_promo_event-booth-00_01.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BL/arm_l
+  rotate: false
+  xy: 1705, 1395
+  size: 150, 163
+  orig: 150, 163
+  offset: 0, 0
+  index: -1
+BL/arm_r
+  rotate: true
+  xy: 1865, 1395
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+BL/body_ti
+  rotate: true
+  xy: 1220, 1244
+  size: 250, 401
+  orig: 250, 401
+  offset: 0, 0
+  index: -1
+BL/face
+  rotate: true
+  xy: 1705, 1741
+  size: 288, 175
+  orig: 288, 175
+  offset: 0, 0
+  index: -1
+BL/forearm_l
+  rotate: false
+  xy: 1705, 1568
+  size: 175, 163
+  orig: 175, 163
+  offset: 0, 0
+  index: -1
+BL/forearm_r
+  rotate: false
+  xy: 1854, 1260
+  size: 175, 125
+  orig: 175, 125
+  offset: 0, 0
+  index: -1
+BL/hand_choki_l
+  rotate: false
+  xy: 418, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_choki_r
+  rotate: false
+  xy: 528, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_l
+  rotate: false
+  xy: 638, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_r
+  rotate: false
+  xy: 748, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_l
+  rotate: false
+  xy: 858, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_r
+  rotate: false
+  xy: 968, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_l
+  rotate: false
+  xy: 1078, 1219
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_r
+  rotate: false
+  xy: 1631, 1173
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+BL/head_b_1
+  rotate: true
+  xy: 1220, 1504
+  size: 525, 475
+  orig: 525, 475
+  offset: 0, 0
+  index: -1
+BL/knee_l
+  rotate: false
+  xy: 1890, 1618
+  size: 125, 188
+  orig: 125, 188
+  offset: 0, 0
+  index: -1
+BL/knee_r
+  rotate: true
+  xy: 10, 1206
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+BL/leg_l
+  rotate: false
+  xy: 1890, 1816
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+BL/leg_r
+  rotate: true
+  xy: 208, 1218
+  size: 101, 200
+  orig: 101, 200
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: false
+  xy: 10, 1329
+  size: 1200, 700
+  orig: 1200, 700
+  offset: 0, 0
+  index: -1
+rootex_paper_1
+  rotate: true
+  xy: 1631, 1283
+  size: 102, 213
+  orig: 102, 213
+  offset: 0, 0
+  index: -1

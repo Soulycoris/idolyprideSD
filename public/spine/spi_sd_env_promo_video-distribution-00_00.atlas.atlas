@@ -1,0 +1,153 @@
+
+spi_sd_env_promo_video-distribution-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BL/arm_l
+  rotate: true
+  xy: 618, 69
+  size: 151, 163
+  orig: 151, 163
+  offset: 0, 0
+  index: -1
+BL/arm_r
+  rotate: true
+  xy: 774, 1838
+  size: 163, 150
+  orig: 163, 150
+  offset: 0, 0
+  index: -1
+BL/body_ti
+  rotate: false
+  xy: 546, 403
+  size: 251, 401
+  orig: 251, 401
+  offset: 0, 0
+  index: -1
+BL/face
+  rotate: false
+  xy: 320, 144
+  size: 288, 175
+  orig: 288, 175
+  offset: 0, 0
+  index: -1
+BL/forearm_l
+  rotate: false
+  xy: 618, 230
+  size: 176, 163
+  orig: 176, 163
+  offset: 0, 0
+  index: -1
+BL/forearm_r
+  rotate: true
+  xy: 774, 1231
+  size: 176, 125
+  orig: 176, 125
+  offset: 0, 0
+  index: -1
+BL/hand_choki_l
+  rotate: false
+  xy: 791, 120
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_choki_r
+  rotate: false
+  xy: 804, 230
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_l
+  rotate: false
+  xy: 807, 340
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_gu_r
+  rotate: false
+  xy: 807, 450
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_l
+  rotate: false
+  xy: 807, 560
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_idle_r
+  rotate: false
+  xy: 807, 670
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_l
+  rotate: false
+  xy: 791, 10
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/hand_pa_r
+  rotate: true
+  xy: 884, 922
+  size: 101, 100
+  orig: 101, 100
+  offset: 0, 0
+  index: -1
+BL/head_b_1
+  rotate: false
+  xy: 10, 329
+  size: 526, 475
+  orig: 526, 475
+  offset: 0, 0
+  index: -1
+BL/knee_l
+  rotate: false
+  xy: 774, 1417
+  size: 126, 188
+  orig: 126, 188
+  offset: 0, 0
+  index: -1
+BL/knee_r
+  rotate: false
+  xy: 774, 1033
+  size: 113, 188
+  orig: 113, 188
+  offset: 0, 0
+  index: -1
+BL/leg_l
+  rotate: false
+  xy: 774, 1615
+  size: 113, 213
+  orig: 113, 213
+  offset: 0, 0
+  index: -1
+BL/leg_r
+  rotate: false
+  xy: 774, 823
+  size: 100, 200
+  orig: 100, 200
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: false
+  xy: 10, 144
+  size: 300, 175
+  orig: 300, 175
+  offset: 0, 0
+  index: -1
+fg
+  rotate: false
+  xy: 10, 814
+  size: 754, 1187
+  orig: 754, 1187
+  offset: 0, 0
+  index: -1

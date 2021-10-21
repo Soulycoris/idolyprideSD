@@ -1,0 +1,202 @@
+
+spi_sd_prop_guild.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+book_b
+  rotate: true
+  xy: 353, 1050
+  size: 66, 138
+  orig: 66, 138
+  offset: 0, 0
+  index: -1
+book_f
+  rotate: false
+  xy: 1525, 1172
+  size: 121, 113
+  orig: 121, 113
+  offset: 0, 0
+  index: -1
+dance_obj
+  rotate: true
+  xy: 1394, 1732
+  size: 299, 332
+  orig: 299, 332
+  offset: 0, 0
+  index: -1
+effect/drop
+  rotate: true
+  xy: 1512, 177
+  size: 284, 473
+  orig: 284, 473
+  offset: 0, 0
+  index: -1
+effect/el_rect_round
+  rotate: false
+  xy: 690, 811
+  size: 320, 320
+  orig: 320, 320
+  offset: 0, 0
+  index: -1
+effect/kira_1
+  rotate: false
+  xy: 10, 1025
+  size: 333, 436
+  orig: 333, 436
+  offset: 0, 0
+  index: -1
+effect/kira_2
+  rotate: true
+  xy: 1344, 819
+  size: 312, 413
+  orig: 312, 413
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: false
+  xy: 10, 1471
+  size: 960, 560
+  orig: 960, 560
+  offset: 0, 0
+  index: -1
+effect/smoke_1
+  rotate: false
+  xy: 980, 1617
+  size: 404, 414
+  orig: 404, 414
+  offset: 0, 0
+  index: -1
+effect/smoke_2
+  rotate: true
+  xy: 1512, 471
+  size: 338, 286
+  orig: 338, 286
+  offset: 0, 0
+  index: -1
+floor_dance
+  rotate: true
+  xy: 10, 495
+  size: 520, 314
+  orig: 520, 314
+  offset: 0, 0
+  index: -1
+floor_mental
+  rotate: true
+  xy: 334, 495
+  size: 520, 314
+  orig: 520, 314
+  offset: 0, 0
+  index: -1
+floor_stamina
+  rotate: true
+  xy: 1020, 611
+  size: 520, 314
+  orig: 520, 314
+  offset: 0, 0
+  index: -1
+floor_technique
+  rotate: true
+  xy: 658, 281
+  size: 520, 314
+  orig: 520, 314
+  offset: 0, 0
+  index: -1
+floor_visual
+  rotate: false
+  xy: 10, 171
+  size: 520, 314
+  orig: 520, 314
+  offset: 0, 0
+  index: -1
+floor_voice
+  rotate: false
+  xy: 982, 287
+  size: 520, 314
+  orig: 520, 314
+  offset: 0, 0
+  index: -1
+melody_1
+  rotate: true
+  xy: 501, 1066
+  size: 50, 107
+  orig: 50, 107
+  offset: 0, 0
+  index: -1
+melody_2
+  rotate: false
+  xy: 1393, 1167
+  size: 122, 118
+  orig: 122, 118
+  offset: 0, 0
+  index: -1
+melody_3
+  rotate: false
+  xy: 878, 1210
+  size: 82, 107
+  orig: 82, 107
+  offset: 0, 0
+  index: -1
+mental_obj
+  rotate: true
+  xy: 878, 1327
+  size: 134, 85
+  orig: 134, 85
+  offset: 0, 0
+  index: -1
+smoke
+  rotate: false
+  xy: 540, 190
+  size: 33, 295
+  orig: 33, 295
+  offset: 0, 0
+  index: -1
+stamina_obj1
+  rotate: false
+  xy: 1393, 1295
+  size: 407, 312
+  orig: 407, 312
+  offset: 0, 0
+  index: -1
+stamina_obj2
+  rotate: false
+  xy: 353, 1126
+  size: 327, 335
+  orig: 327, 335
+  offset: 0, 0
+  index: -1
+technique_obj
+  rotate: false
+  xy: 1810, 1405
+  size: 221, 298
+  orig: 221, 298
+  offset: 0, 0
+  index: -1
+visual_obj
+  rotate: true
+  xy: 980, 1141
+  size: 466, 403
+  orig: 466, 403
+  offset: 0, 0
+  index: -1
+visual_prop
+  rotate: false
+  xy: 1767, 972
+  size: 254, 313
+  orig: 254, 313
+  offset: 0, 0
+  index: -1
+voice_obj1
+  rotate: false
+  xy: 1736, 1713
+  size: 288, 318
+  orig: 288, 318
+  offset: 0, 0
+  index: -1
+voice_obj2
+  rotate: false
+  xy: 690, 1142
+  size: 178, 319
+  orig: 178, 319
+  offset: 0, 0
+  index: -1

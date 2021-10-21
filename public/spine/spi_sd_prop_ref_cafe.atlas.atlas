@@ -1,0 +1,118 @@
+
+spi_sd_prop_ref_cafe.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bubble
+  rotate: true
+  xy: 1907, 1694
+  size: 97, 74
+  orig: 97, 74
+  offset: 0, 0
+  index: -1
+cafeaulait
+  rotate: false
+  xy: 334, 1321
+  size: 188, 64
+  orig: 188, 64
+  offset: 0, 0
+  index: -1
+coffee
+  rotate: false
+  xy: 532, 1321
+  size: 188, 64
+  orig: 188, 64
+  offset: 0, 0
+  index: -1
+coffeecup
+  rotate: false
+  xy: 1140, 1172
+  size: 293, 232
+  orig: 293, 232
+  offset: 0, 0
+  index: -1
+desk_b
+  rotate: true
+  xy: 1625, 1544
+  size: 437, 181
+  orig: 437, 181
+  offset: 0, 0
+  index: -1
+desk_f
+  rotate: true
+  xy: 1429, 1540
+  size: 441, 186
+  orig: 441, 186
+  offset: 0, 0
+  index: -1
+fork
+  rotate: true
+  xy: 1443, 1175
+  size: 118, 489
+  orig: 118, 489
+  offset: 0, 0
+  index: -1
+knife
+  rotate: true
+  xy: 334, 1217
+  size: 74, 523
+  orig: 74, 523
+  offset: 0, 0
+  index: -1
+pancake
+  rotate: false
+  xy: 10, 1395
+  size: 743, 586
+  orig: 743, 586
+  offset: 0, 0
+  index: -1
+piece
+  rotate: true
+  xy: 1816, 1801
+  size: 180, 152
+  orig: 180, 152
+  offset: 0, 0
+  index: -1
+pot
+  rotate: true
+  xy: 763, 1509
+  size: 472, 418
+  orig: 472, 418
+  offset: 0, 0
+  index: -1
+saucer
+  rotate: false
+  xy: 763, 1301
+  size: 367, 198
+  orig: 367, 198
+  offset: 0, 0
+  index: -1
+soda
+  rotate: false
+  xy: 1191, 1414
+  size: 228, 567
+  orig: 228, 567
+  offset: 0, 0
+  index: -1
+tea
+  rotate: true
+  xy: 1816, 1576
+  size: 215, 81
+  orig: 215, 81
+  offset: 0, 0
+  index: -1
+teacup
+  rotate: false
+  xy: 1625, 1303
+  size: 329, 231
+  orig: 329, 231
+  offset: 0, 0
+  index: -1
+ticket
+  rotate: true
+  xy: 10, 1177
+  size: 208, 314
+  orig: 208, 314
+  offset: 0, 0
+  index: -1

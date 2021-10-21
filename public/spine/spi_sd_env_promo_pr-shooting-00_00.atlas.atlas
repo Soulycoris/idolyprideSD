@@ -1,0 +1,167 @@
+
+spi_sd_env_promo_pr-shooting-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BC/arm_l
+  rotate: false
+  xy: 1382, 991
+  size: 101, 140
+  orig: 101, 140
+  offset: 0, 0
+  index: -1
+BC/arm_r
+  rotate: false
+  xy: 1464, 420
+  size: 101, 140
+  orig: 101, 140
+  offset: 0, 0
+  index: -1
+BC/body_ti
+  rotate: false
+  xy: 1172, 841
+  size: 200, 321
+  orig: 200, 321
+  offset: 0, 0
+  index: -1
+BC/forearm_l
+  rotate: false
+  xy: 1382, 841
+  size: 110, 140
+  orig: 110, 140
+  offset: 0, 0
+  index: -1
+BC/forearm_r
+  rotate: false
+  xy: 1343, 420
+  size: 110, 140
+  orig: 110, 140
+  offset: 0, 0
+  index: -1
+BC/hand_choki_l
+  rotate: false
+  xy: 1469, 1632
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_choki_r
+  rotate: false
+  xy: 1469, 1722
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_gu_l
+  rotate: false
+  xy: 1492, 991
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_gu_r
+  rotate: false
+  xy: 1493, 741
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_idle_l
+  rotate: false
+  xy: 1502, 859
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_idle_r
+  rotate: false
+  xy: 1549, 1461
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_pa_l
+  rotate: false
+  xy: 1559, 1551
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/hand_pa_r
+  rotate: false
+  xy: 1559, 1641
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+BC/head_b_1
+  rotate: true
+  xy: 1172, 10
+  size: 400, 390
+  orig: 400, 390
+  offset: 0, 0
+  index: -1
+BC/knee_l
+  rotate: false
+  xy: 1469, 1141
+  size: 90, 150
+  orig: 90, 150
+  offset: 0, 0
+  index: -1
+BC/knee_r
+  rotate: false
+  xy: 1469, 1301
+  size: 90, 150
+  orig: 90, 150
+  offset: 0, 0
+  index: -1
+BC/leg_l
+  rotate: false
+  xy: 1493, 571
+  size: 70, 161
+  orig: 70, 161
+  offset: 0, 0
+  index: -1
+BC/leg_r
+  rotate: false
+  xy: 1469, 1462
+  size: 70, 161
+  orig: 70, 161
+  offset: 0, 0
+  index: -1
+camera
+  rotate: false
+  xy: 1172, 534
+  size: 162, 298
+  orig: 162, 298
+  offset: 0, 0
+  index: -1
+effect/shadow
+  rotate: true
+  xy: 1343, 591
+  size: 240, 140
+  orig: 240, 140
+  offset: 0, 0
+  index: -1
+flash
+  rotate: false
+  xy: 10, 208
+  size: 1152, 1617
+  orig: 1152, 1617
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 1172, 1171
+  size: 287, 653
+  orig: 287, 653
+  offset: 0, 0
+  index: -1
+strong_flash
+  rotate: false
+  xy: 10, 11
+  size: 1152, 187
+  orig: 1152, 187
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+spi_sd_env_ref_theme-park-00_02.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cup_blue
+  rotate: false
+  xy: 2, 48
+  size: 328, 319
+  orig: 328, 319
+  offset: 0, 0
+  index: -1
+cup_blue_shadow
+  rotate: false
+  xy: 332, 2
+  size: 328, 205
+  orig: 328, 205
+  offset: 0, 0
+  index: -1
+cup_pink_shadow
+  rotate: false
+  xy: 332, 2
+  size: 328, 205
+  orig: 328, 205
+  offset: 0, 0
+  index: -1
+cup_yellow_shadow
+  rotate: false
+  xy: 332, 2
+  size: 328, 205
+  orig: 328, 205
+  offset: 0, 0
+  index: -1
+cup_pink
+  rotate: true
+  xy: 517, 530
+  size: 331, 320
+  orig: 331, 320
+  offset: 0, 0
+  index: -1
+cup_yellow
+  rotate: false
+  xy: 517, 209
+  size: 331, 319
+  orig: 331, 319
+  offset: 0, 0
+  index: -1
+tesuri
+  rotate: false
+  xy: 2, 369
+  size: 513, 492
+  orig: 513, 492
+  offset: 0, 0
+  index: -1

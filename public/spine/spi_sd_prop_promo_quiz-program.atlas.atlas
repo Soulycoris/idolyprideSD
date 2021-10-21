@@ -1,0 +1,41 @@
+
+spi_sd_prop_promo_quiz-program.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+button
+  rotate: true
+  xy: 408, 360
+  size: 48, 36
+  orig: 48, 36
+  offset: 0, 0
+  index: -1
+button_base
+  rotate: true
+  xy: 346, 360
+  size: 84, 52
+  orig: 84, 52
+  offset: 0, 0
+  index: -1
+button_glow
+  rotate: false
+  xy: 346, 286
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+stage_correct
+  rotate: false
+  xy: 10, 297
+  size: 227, 147
+  orig: 227, 147
+  offset: 0, 0
+  index: -1
+tesuri
+  rotate: false
+  xy: 247, 303
+  size: 89, 141
+  orig: 89, 141
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+spi_sd_prop_ref_theme-park.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+prop/balloon_art
+  rotate: false
+  xy: 726, 1322
+  size: 274, 252
+  orig: 274, 252
+  offset: 0, 0
+  index: -1
+prop/balloon_rainbow
+  rotate: true
+  xy: 797, 906
+  size: 376, 777
+  orig: 376, 777
+  offset: 0, 0
+  index: -1
+prop/balloon_red
+  rotate: true
+  xy: 10, 937
+  size: 375, 777
+  orig: 375, 777
+  offset: 0, 0
+  index: -1
+prop/churros
+  rotate: true
+  xy: 10, 1529
+  size: 45, 237
+  orig: 45, 237
+  offset: 0, 0
+  index: -1
+prop/map
+  rotate: false
+  xy: 1010, 1292
+  size: 341, 282
+  orig: 341, 282
+  offset: 0, 0
+  index: -1
+prop/popcorn_cup
+  rotate: true
+  xy: 491, 1373
+  size: 201, 225
+  orig: 201, 225
+  offset: 0, 0
+  index: -1
+prop/softcream
+  rotate: true
+  xy: 257, 1484
+  size: 90, 224
+  orig: 90, 224
+  offset: 0, 0
+  index: -1
