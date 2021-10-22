@@ -2,7 +2,7 @@
 
 idoly pride 手游小人动画播放器
 
-![spi_sd_chr_cos_mei-schl-00.gif](https://i.loli.net/2021/10/22/fS6cgM5GRyvA2wp.gif)
+![](https://pic.imgdb.cn/item/6172ce0f2ab3f51d911a855e.gif)
 
 ## 运行
 
