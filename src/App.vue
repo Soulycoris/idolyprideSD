@@ -16,14 +16,20 @@
           <el-checkbox :label="item.name" v-for="(item, index) in skinsList" :key="index" />
         </el-checkbox-group>
       </el-form-item>
+      <el-form-item>
+        <el-button icon="el-icon-download" circle @click="eventBuildGif"></el-button>
+      </el-form-item>
     </el-form>
     <canvas id="canvas"></canvas>
   </div>
 </template>
 <script setup lang="ts">
-import { defineComponent, reactive, toRefs, onMounted, computed, ref, Ref } from 'vue';
+import { onMounted, ref, Ref } from 'vue';
+
 import assetNameList from './assets/spine/name.js';
 import spine from './assets/spine/spine-webgl';
+import GIF from 'gif.js';
+
 // console.log(assetNameList);
 
 interface Form {
@@ -69,13 +75,17 @@ let form: Form = {
   skins: ref(['body_FL', 'head_FL', 'shadow']),
 };
 
-onMounted(() => {
-  init();
-});
+let gif: GIF;
+let buildGifTag = false;
 
 let skeletonsList: Ref<string[]> = ref([]);
 let animationList: Ref<spine.Animation[]> = ref([]);
 let skinsList: Ref<spine.Skin[]> = ref([]);
+let percentage = ref(0);
+
+onMounted(() => {
+  init();
+});
 
 function init() {
   // Setup canvas and WebGL context. We pass alpha: false to canvas.getContext() so we don't use premultiplied alpha when
@@ -83,7 +93,7 @@ function init() {
   canvas = document.getElementById('canvas') as HTMLCanvasElement;
   // canvas.width = window.innerWidth;
   // canvas.height = window.innerHeight;
-  let config = { alpha: false };
+  let config = { alpha: false, preserveDrawingBuffer: true };
   gl = (canvas.getContext('webgl', config) as WebGLRenderingContext) || (canvas.getContext('experimental-webgl', config) as WebGLRenderingContext);
   if (!gl) {
     alert('WebGL is unavailable.');
@@ -99,6 +109,8 @@ function init() {
   skeletonRenderer = new spine.webgl.SkeletonRenderer(context);
   assetManager = new spine.webgl.AssetManager(gl);
 
+  // 初始化gif构建
+  initEncoder();
   // Create a debug renderer and the ShapeRenderer it needs to render lines.
   // debugRenderer = new spine.webgl.SkeletonDebugRenderer(gl);
   // debugRenderer.drawRegionAttachments = true;
@@ -119,6 +131,58 @@ function init() {
 
   loadAssets(activeSkeleton);
 }
+
+function initEncoder() {
+  gif = new GIF({
+    background: '#00',
+    quality: 10,
+    height: canvas.clientHeight,
+    width: canvas.clientWidth,
+    workers: 4,
+    workerScript: '/assets/gif/gif.worker.js',
+    repeat: 0,
+  });
+
+  gif.on('finished', (blob) => {
+    console.log('finished');
+    const dom = document.createElement('a');
+    dom.href = URL.createObjectURL(blob);
+    dom.download = activeSkeleton;
+    dom.click();
+    URL.revokeObjectURL(dom.href);
+  });
+
+  gif.on('start', () => {
+    console.log('start');
+  });
+
+  gif.on('progress', (num: number) => {
+    console.log(num);
+    percentage.value = Math.ceil(num * 100);
+  });
+}
+
+function eventBuildGif() {
+  if (buildGifTag) {
+    return;
+  }
+  buildGifTag = true;
+  let state = skeletons[activeSkeleton].state;
+  let skeleton = skeletons[activeSkeleton].skeleton;
+  skeleton.setToSetupPose();
+  state.setAnimation(0, form.animation.value, false);
+}
+
+function handleBuildGif() {
+  if (!buildGifTag) {
+    return;
+  }
+  if (gl) {
+    console.log('addFrame');
+    gif.addFrame(canvas, { copy: true, delay: 1000 / 60 });
+  }
+}
+
 function loadAssets(asstesName: string) {
   assetManager.loadText(`spine/${asstesName}.skl.skl`);
   assetManager.loadTextureAtlas(`spine/${asstesName}.atlas.atlas`);
@@ -155,7 +219,6 @@ function loadSkeleton(name: string): skeletonData {
   skeletonLoader.scale = 1;
   let skeletonData = skeletonLoader.readSkeletonData(assetManager.get('spine/' + name + '.skl.skl'));
   let skeleton = new spine.Skeleton(skeletonData);
-  console.log(skeletonData);
 
   if (skeletonData.skins[5]) {
     skinAll.addSkin(skeletonData.skins[1]);
@@ -174,14 +237,25 @@ function loadSkeleton(name: string): skeletonData {
   let animations = skeletonData.animations[1]?.name ?? skeletonData.animations[0].name;
   animationState.setAnimation(0, animations, true);
 
-  // animationState.addListener({
-  //   start: (entry) => {},
-  //   interrupt: (entry) => {},
-  //   end: (entry) => {},
-  //   dispose: (entry) => {},
-  //   complete: (entry) => {},
-  //   event: (entry, event) => {},
-  // });
+  animationState.addListener({
+    start: (entry) => {
+      if (buildGifTag) {
+        console.log('animation start');
+        handleBuildGif();
+      }
+    },
+    interrupt: (entry) => {},
+    end: (entry) => {},
+    dispose: (entry) => {},
+    complete: (entry) => {
+      if (buildGifTag) {
+        console.log('animation complete');
+        buildGifTag = false;
+        gif.render();
+      }
+    },
+    event: (entry, event) => {},
+  });
 
   // Pack everything up and return to caller.
   return { skeleton: skeleton, state: animationState, bounds: bounds, premultipliedAlpha: false };
@@ -232,20 +306,21 @@ function setupUI() {
   animationList.value.splice(0, animationList.value.length, ...skeleton.data.animations);
   skinsList.value.splice(0, skinsList.value.length, ...skeleton.data.skins);
 }
+
 function render() {
   if (!skeletons[activeSkeleton]) {
     return;
   }
+
   let now = Date.now() / 1000;
   let delta = now - lastFrameTime;
   lastFrameTime = now;
   // Update the MVP matrix to adjust for canvas size changes
   resize();
 
-  if (gl) {
-    gl.clearColor(0.3, 0.3, 0.3, 1);
-    gl.clear(gl.COLOR_BUFFER_BIT);
-  }
+  gl?.clearColor(0.3, 0.3, 0.3, 1);
+  gl?.clear(gl.COLOR_BUFFER_BIT);
+
   // Apply the animation state based on the delta time.
   let skeleton = skeletons[activeSkeleton].skeleton;
   let state = skeletons[activeSkeleton].state;
@@ -266,10 +341,13 @@ function render() {
 
   skeletonRenderer.premultipliedAlpha = premultipliedAlpha;
   skeletonRenderer.draw(batcher, skeleton);
-  batcher.end();
 
+  batcher.end();
   shader.unbind();
 
+  if (buildGifTag) {
+    handleBuildGif();
+  }
   requestAnimationFrame(render);
 }
 
@@ -293,9 +371,7 @@ function resize() {
   let height = canvas.height * scale;
 
   mvp.ortho2d(centerX - width / 2, centerY - height / 2, width, height);
-  if (gl) {
-    gl.viewport(0, 0, canvas.width, canvas.height);
-  }
+  gl?.viewport(0, 0, canvas.width, canvas.height);
 }
 </script>
 <style lang="scss" scope>

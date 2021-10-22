@@ -9,10 +9,12 @@
   "dependencies": {
     "axios": "^0.23.0",
     "element-plus": "^1.1.0-beta.24",
+    "gif.js": "^0.2.0",
     "unplugin-vue-components": "^0.16.0",
     "vue": "^3.2.16"
   },
   "devDependencies": {
+    "@types/gif.js": "^0.2.2",
     "@vitejs/plugin-vue": "^1.9.3",
     "sass": "^1.43.2",
     "typescript": "^4.4.3",
