@@ -3,7 +3,12 @@
     <el-form :model="form" size="mini" class="form" label-width="50px">
       <el-form-item label="骨骼:">
         <el-select v-model="form.skeleton.value" placeholder="骨骼" filterable @change="eventChange($event, 'skeleton')">
-          <el-option :label="item" :value="item" v-for="(item, index) in assetNameList" :key="index"></el-option>
+          <el-option :label="item" :value="item" v-for="(item, index) in skeletonList" :key="index"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="材质:">
+        <el-select v-model="form.skin.value" placeholder="材质" filterable @change="eventChange($event, 'skin')">
+          <el-option :label="item" :value="item" v-for="(item, index) in skinList" :key="index"></el-option>
         </el-select>
       </el-form-item>
       <el-form-item label="动画:">
@@ -18,6 +23,7 @@
       </el-form-item>
       <el-form-item>
         <el-button icon="el-icon-download" circle @click="eventBuildGif"></el-button>
+        <el-progress style="margin-top:6px" v-show="percentage > 0 && percentage < 100" :percentage="percentage" :show-text="false" />
       </el-form-item>
     </el-form>
     <canvas id="canvas"></canvas>
@@ -26,11 +32,9 @@
 <script setup lang="ts">
 import { onMounted, ref, Ref } from 'vue';
 
-import assetNameList from './assets/spine/name.js';
+import { skeletonList, skinList } from './assets/spine/name';
 import spine from './assets/spine/spine-webgl';
 import GIF from 'gif.js';
-
-// console.log(assetNameList);
 
 interface Form {
   skeleton: Ref<string>;
@@ -64,14 +68,12 @@ let assetManager: spine.webgl.AssetManager;
 
 let lastFrameTime = 0;
 let skeletons: Skeletons = {};
-let activeSkeleton = 'spi_sd_chr_cos_mei-idol-01';
-
 let skinAll = new spine.Skin('body');
-
+let defaultSkeleton = 'spi_sd_chr_cos_mei-idol-01';
 let form: Form = {
   skeleton: ref('spi_sd_chr_cos_mei-idol-01'),
   animation: ref('loop_idle'),
-  skin: ref('body_FL'),
+  skin: ref('spi_sd_chr_cos_mei-idol-01'),
   skins: ref(['body_FL', 'head_FL', 'shadow']),
 };
 
@@ -111,13 +113,6 @@ function init() {
 
   // 初始化gif构建
   initEncoder();
-  // Create a debug renderer and the ShapeRenderer it needs to render lines.
-  // debugRenderer = new spine.webgl.SkeletonDebugRenderer(gl);
-  // debugRenderer.drawRegionAttachments = true;
-  // debugRenderer.drawBoundingBoxes = true;
-  // debugRenderer.drawMeshHull = true;
-  // debugRenderer.drawMeshTriangles = true;
-  // debugRenderer.drawPaths = true;
 
   // Tell AssetManager to load the resources for each skeleton, including the exported .skel file, the .atlas file and the .png
   // file for the atlas. We then wait until all resources are loaded in the load() method.
@@ -127,9 +122,9 @@ function init() {
   //   assetManager.loadTextureAtlas(`spine/${name}.atlas.atlas`);
   // });
   // assetManager.loadText(`spine/spi_sd_chr_mot_cmn.skl.skl`);
-  // assetManager.loadTextureAtlas(`spine/${activeSkeleton}.atlas.atlas`);
+  // assetManager.loadTextureAtlas(`spine/${form.skeleton.value}.atlas.atlas`);
 
-  loadAssets(activeSkeleton);
+  loadAssets();
 }
 
 function initEncoder() {
@@ -147,9 +142,10 @@ function initEncoder() {
     console.log('finished');
     const dom = document.createElement('a');
     dom.href = URL.createObjectURL(blob);
-    dom.download = activeSkeleton;
+    dom.download = form.skeleton.value;
     dom.click();
     URL.revokeObjectURL(dom.href);
+    gif.abort();
   });
 
   gif.on('start', () => {
@@ -158,17 +154,20 @@ function initEncoder() {
 
   gif.on('progress', (num: number) => {
     console.log(num);
-    percentage.value = Math.ceil(num * 100);
+    if (!num) {
+      return;
+    }
+    percentage.value = Math.floor(num * 100);
   });
 }
 
 function eventBuildGif() {
-  if (buildGifTag) {
+  if (percentage.value > 0 && percentage.value < 100) {
     return;
   }
   buildGifTag = true;
-  let state = skeletons[activeSkeleton].state;
-  let skeleton = skeletons[activeSkeleton].skeleton;
+  let state = skeletons[form.skeleton.value].state;
+  let skeleton = skeletons[form.skeleton.value].skeleton;
   skeleton.setToSetupPose();
   state.setAnimation(0, form.animation.value, false);
 }
@@ -178,22 +177,24 @@ function handleBuildGif() {
     return;
   }
   if (gl) {
-    console.log('addFrame');
     gif.addFrame(canvas, { copy: true, delay: 1000 / 60 });
   }
 }
 
-function loadAssets(asstesName: string) {
-  assetManager.loadText(`spine/${asstesName}.skl.skl`);
-  assetManager.loadTextureAtlas(`spine/${asstesName}.atlas.atlas`);
-  // activeSkeleton = 'spi_sd_chr_mot_cmn';
+function loadAssets() {
+  if (!assetManager.get(`spine/${form.skeleton.value}.skl.skl`)) {
+    assetManager.loadText(`spine/${form.skeleton.value}.skl.skl`);
+  }
+  if (!assetManager.get(`spine/${form.skin.value}.atlas.atlas`)) {
+    assetManager.loadTextureAtlas(`spine/${form.skin.value}.atlas.atlas`);
+  }
   requestAnimationFrame(load);
 }
 
 function load() {
   // Wait until the AssetManager has loaded all resources, then load the skeletons.
   if (assetManager.isLoadingComplete()) {
-    skeletons[activeSkeleton] = loadSkeleton(activeSkeleton);
+    skeletons[form.skeleton.value] = loadSkeleton(form.skeleton.value, form.skin.value);
     setupUI();
     lastFrameTime = Date.now() / 1000;
     requestAnimationFrame(render); // Loading is done, call render every frame.
@@ -202,12 +203,11 @@ function load() {
   }
 }
 
-function loadSkeleton(name: string): skeletonData {
+function loadSkeleton(skeleName: string, atlasName: string): skeletonData {
   // Load the texture atlas using name.atlas from the AssetManager.
 
   // let atlas = assetManager.get('spine/spi_sd_chr_cos_mei-idol-01.atlas.atlas') as spine.TextureAtlas;
-  let atlas = assetManager.get('spine/' + name + '.atlas.atlas') as spine.TextureAtlas;
-  console.log(atlas);
+  let atlas = assetManager.get('spine/' + atlasName + '.atlas.atlas') as spine.TextureAtlas;
 
   // Create a AtlasAttachmentLoader that resolves region, mesh, boundingbox and path attachments
   let atlasLoader = new spine.AtlasAttachmentLoader(atlas);
@@ -217,7 +217,7 @@ function loadSkeleton(name: string): skeletonData {
 
   // Set the scale to apply during parsing, parse the file, and create a new skeleton.
   skeletonLoader.scale = 1;
-  let skeletonData = skeletonLoader.readSkeletonData(assetManager.get('spine/' + name + '.skl.skl'));
+  let skeletonData = skeletonLoader.readSkeletonData(assetManager.get('spine/' + skeleName + '.skl.skl'));
   let skeleton = new spine.Skeleton(skeletonData);
 
   if (skeletonData.skins[5]) {
@@ -236,12 +236,13 @@ function loadSkeleton(name: string): skeletonData {
   let animationState = new spine.AnimationState(animationStateData);
   let animations = skeletonData.animations[1]?.name ?? skeletonData.animations[0].name;
   animationState.setAnimation(0, animations, true);
+  form.animation.value = animations;
 
   animationState.addListener({
     start: (entry) => {
       if (buildGifTag) {
+        percentage.value = 0.1;
         console.log('animation start');
-        handleBuildGif();
       }
     },
     interrupt: (entry) => {},
@@ -258,7 +259,7 @@ function loadSkeleton(name: string): skeletonData {
   });
 
   // Pack everything up and return to caller.
-  return { skeleton: skeleton, state: animationState, bounds: bounds, premultipliedAlpha: false };
+  return { skeleton, state: animationState, bounds, premultipliedAlpha: false };
 }
 
 function calculateSetupPoseBounds(skeleton: spine.Skeleton) {
@@ -272,8 +273,8 @@ function calculateSetupPoseBounds(skeleton: spine.Skeleton) {
 
 function eventChange(val: string | string[], tag: string) {
   // console.log(val, tag);
-  let skeleton = skeletons[activeSkeleton].skeleton;
-  let state = skeletons[activeSkeleton].state;
+  let skeleton = skeletons[form.skeleton.value]?.skeleton;
+  let state = skeletons[form.skeleton.value]?.state;
 
   if (tag === 'animation') {
     skeleton.setToSetupPose();
@@ -285,13 +286,16 @@ function eventChange(val: string | string[], tag: string) {
     });
     skeleton.setSkin(skinAll);
     skeleton.setSlotsToSetupPose();
+    loadAssets();
+  } else if (tag === 'skin') {
+    skeleton.setSlotsToSetupPose();
+    loadAssets();
   } else if (tag === 'skeleton') {
     form.animation.value = '';
-    form.skin.value = '';
-    activeSkeleton = val as string;
-    let res = assetManager.get('spine/' + activeSkeleton + '.skl.skl');
-    if (!res) {
-      loadAssets(activeSkeleton);
+    form.skeleton.value = val as string;
+    form.skin.value = skinList.includes(val as string) ? (val as string) : defaultSkeleton;
+    if (!skeleton) {
+      loadAssets();
     } else {
       setupUI();
     }
@@ -302,13 +306,13 @@ function setupUI() {
   if (!skeletonsList.value.length) {
     skeletonsList.value = Object.keys(skeletons);
   }
-  let skeleton = skeletons[activeSkeleton].skeleton;
+  let skeleton = skeletons[form.skeleton.value].skeleton;
   animationList.value.splice(0, animationList.value.length, ...skeleton.data.animations);
   skinsList.value.splice(0, skinsList.value.length, ...skeleton.data.skins);
 }
 
 function render() {
-  if (!skeletons[activeSkeleton]) {
+  if (!skeletons[form.skeleton.value]) {
     return;
   }
 
@@ -318,14 +322,15 @@ function render() {
   // Update the MVP matrix to adjust for canvas size changes
   resize();
 
+  // gl?.clearColor(0, 0, 0, 0)
   gl?.clearColor(0.3, 0.3, 0.3, 1);
   gl?.clear(gl.COLOR_BUFFER_BIT);
 
   // Apply the animation state based on the delta time.
-  let skeleton = skeletons[activeSkeleton].skeleton;
-  let state = skeletons[activeSkeleton].state;
+  let skeleton = skeletons[form.skeleton.value].skeleton;
+  let state = skeletons[form.skeleton.value].state;
 
-  let premultipliedAlpha = skeletons[activeSkeleton].premultipliedAlpha;
+  let premultipliedAlpha = skeletons[form.skeleton.value].premultipliedAlpha;
 
   state.update(delta);
   state.apply(skeleton);
@@ -360,7 +365,7 @@ function resize() {
   }
 
   // Calculations to center the skeleton in the canvas.
-  let bounds = skeletons[activeSkeleton].bounds;
+  let bounds = skeletons[form.skeleton.value].bounds;
   let centerX = bounds.offset.x + bounds.size.x / 2;
   let centerY = bounds.offset.y + bounds.size.y / 2;
   let scaleX = bounds.size.x / canvas.width;
