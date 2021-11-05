@@ -1,0 +1,111 @@
+
+spi_sd_env_promo_fashion-show-00_00.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+grade
+  rotate: false
+  xy: 10, 185
+  size: 1152, 79
+  orig: 1152, 79
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 680, 274
+  size: 150, 904
+  orig: 150, 904
+  offset: 0, 0
+  index: -1
+mob/mb1
+  rotate: false
+  xy: 358, 1328
+  size: 303, 686
+  orig: 303, 686
+  offset: 0, 0
+  index: -1
+mob/mb2
+  rotate: true
+  xy: 1346, 734
+  size: 295, 668
+  orig: 295, 668
+  offset: 0, 0
+  index: -1
+mob/mb3
+  rotate: true
+  xy: 682, 434
+  size: 290, 665
+  orig: 290, 665
+  offset: 0, 0
+  index: -1
+mob/mb4
+  rotate: true
+  xy: 671, 1035
+  size: 302, 665
+  orig: 302, 665
+  offset: 0, 0
+  index: -1
+mob/mb5
+  rotate: true
+  xy: 10, 432
+  size: 289, 660
+  orig: 289, 660
+  offset: 0, 0
+  index: -1
+mob/mb6
+  rotate: false
+  xy: 10, 1347
+  size: 338, 667
+  orig: 338, 667
+  offset: 0, 0
+  index: -1
+mob/mf1
+  rotate: true
+  xy: 10, 732
+  size: 294, 662
+  orig: 294, 662
+  offset: 0, 0
+  index: -1
+mob/mf2
+  rotate: false
+  xy: 1312, 1347
+  size: 303, 667
+  orig: 303, 667
+  offset: 0, 0
+  index: -1
+mob/mf3
+  rotate: false
+  xy: 1625, 1350
+  size: 303, 664
+  orig: 303, 664
+  offset: 0, 0
+  index: -1
+mob/mf4
+  rotate: true
+  xy: 1346, 1039
+  size: 298, 662
+  orig: 298, 662
+  offset: 0, 0
+  index: -1
+mob/mf5
+  rotate: false
+  xy: 671, 1350
+  size: 311, 664
+  orig: 311, 664
+  offset: 0, 0
+  index: -1
+mob/mf6
+  rotate: false
+  xy: 992, 1352
+  size: 310, 662
+  orig: 310, 662
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 1172, 222
+  size: 42, 796
+  orig: 42, 796
+  offset: 0, 0
+  index: -1
