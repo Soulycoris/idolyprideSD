@@ -127,6 +127,7 @@ const skinList = [
   'spi_sd_chr_cos_suz-schl-00',
   'spi_sd_chr_cos_suz-trng-00',
   'spi_sd_chr_cos_szk-casl-00',
+  'spi_sd_chr_cos_szk-chna-00',
   'spi_sd_chr_cos_szk-idol-00',
   'spi_sd_chr_cos_szk-idol-01',
   'spi_sd_chr_cos_szk-idol-02',
